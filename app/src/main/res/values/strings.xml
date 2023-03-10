@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">counting app</string>
+    <string name="chinese">Chinese</string>
+    <string name="stop">Stop</string>
+    <string name="german">German</string>
+    <string name="russian">Russian</string>
+    <string name="french">French</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+</resources>

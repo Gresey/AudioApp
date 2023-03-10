@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="37dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:onClick="onClickButton"
+            android:backgroundTint="#FF0000"
+            android:tag="0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/english" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:onClick="onClickButton"
+            android:tag="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:backgroundTint="#ADD8E6"
+            android:text="@string/spanish" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:onClick="onClickButton"
+            android:tag="2"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:backgroundTint="#00A36C"
+            android:text="@string/french" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="42dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:onClick="onClickButton"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:backgroundTint="#FFFF00"
+            android:tag="3"
+            android:text="@string/russian" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:backgroundTint="#FFA500"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:onClick="onClickButton"
+            android:tag="4"
+            android:text="@string/german" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:onClick="onClickButton"
+            android:backgroundTint="#00008B"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:tag="5"
+            android:text="@string/chinese" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="337dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="stop"
+
+        android:textSize="20sp"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#000000"
+
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
